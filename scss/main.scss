@@ -1,0 +1,23 @@
+html{
+  height:100%;
+  font-family:Arial,"Microsoft Yahei";
+  body{
+    height:100%;
+    background:#24211B;
+  }
+}
+
+// for row
+.row{
+  width:100%;
+  margin:0 auto;
+  &:before{
+    content:' ';
+    display:table;
+  }
+  &:after{
+    content:' ';
+    display:table;
+    clear:both;
+  }
+}

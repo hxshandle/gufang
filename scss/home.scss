@@ -1,0 +1,35 @@
+body {
+  .home-title {
+    text-align: center;
+    padding-top: 200px;
+    img {
+      width: 488px;
+    }
+  }
+}
+
+// menu navigration
+.nav{
+  text-align:center;
+  .menu{
+    list-style:none;
+    margin:0 auto;
+    padding:0;
+    li{
+      display:inline-block;
+      margin:0 1.2em;
+      a{
+        text-decoration:none;
+        font-size:1.375em;
+        color:#fff;
+      }
+      .menu-content{
+        li{
+          a{
+            font-size:0.7em;
+          }
+        }
+      }
+    }
+  }
+}

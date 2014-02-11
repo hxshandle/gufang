@@ -1,8 +1,2 @@
-html {
-  height: 100%; }
-  html body {
-    height: 100%;
-    background: #24211B;
-    color: #ffffff; }
-    html body .main-logo, html body .sub {
-      position: absolute; }
+html body .main-logo, html body .sub {
+  position: absolute; }

@@ -1,0 +1,21 @@
+body .home-title {
+  text-align: center;
+  padding-top: 200px; }
+  body .home-title img {
+    width: 488px; }
+
+.nav {
+  text-align: center; }
+  .nav .menu {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0; }
+    .nav .menu li {
+      display: inline-block;
+      margin: 0 1.2em; }
+      .nav .menu li a {
+        text-decoration: none;
+        font-size: 1.375em;
+        color: #fff; }
+      .nav .menu li .menu-content li a {
+        font-size: 0.7em; }
