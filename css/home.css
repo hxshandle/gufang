@@ -6,7 +6,7 @@ html {
     background-size: cover; }
     html body .home-title {
       text-align: center;
-      padding-top: 200px; }
+      padding-top: 170px; }
       html body .home-title img {
         width: 488px; }
     html body .mask {
@@ -29,11 +29,24 @@ html {
       .nav .menu li a {
         text-decoration: none;
         font-size: 1.375em;
-        color: #fff; }
-      .nav .menu li .menu-content li {
-        margin: 0;
-        text-align: left;
-        display: block; }
-        .nav .menu li .menu-content li a {
-          font-size: 0.7em;
-          padding: 7px 0; }
+        color: #ccc;
+        padding-bottom: 1em; }
+        .nav .menu li a:hover {
+          color: #fff; }
+      .nav .menu li.active a {
+        color: #fff;
+        border-bottom: 2px solid #fff; }
+      .nav .menu li.active .menu-content li a {
+        border-bottom: none; }
+      .nav .menu li .menu-content {
+        padding-top: 1.3em; }
+        .nav .menu li .menu-content li {
+          margin: 0;
+          text-align: left;
+          display: block; }
+          .nav .menu li .menu-content li a {
+            font-size: 0.875em;
+            padding: 1em 0;
+            color: #ccc; }
+            .nav .menu li .menu-content li a:hover {
+              color: #fff; }

@@ -6,7 +6,7 @@ html {
     background-size: cover;
     .home-title {
       text-align: center;
-      padding-top: 200px;
+      padding-top: 170px;
       img {
         width: 488px;
       }
@@ -35,16 +35,39 @@ html {
       a {
         text-decoration: none;
         font-size: 1.375em;
-        color: #fff;
+        color: #ccc;
+        padding-bottom:1em;
+        &:hover{
+          color:#fff;
+        }
+      }
+      // li.active
+      &.active{
+        a{
+          color:#fff;
+          border-bottom:2px solid #fff;
+        }
+        .menu-content{
+          li{
+            a{
+              border-bottom:none;
+            }
+          }
+        }
       }
       .menu-content {
+        padding-top:1.3em;
         li {
           margin: 0;
           text-align: left;
           display: block;
           a {
-            font-size: 0.7em;
-            padding: 7px 0;
+            font-size: 0.875em;
+            padding: 1em 0;
+            color:#ccc;
+            &:hover{
+              color:#fff;
+            }
           }
         }
       }
