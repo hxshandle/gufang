@@ -2,22 +2,37 @@ html {
   height: 100%; }
   html body {
     height: 100%;
-    background: url(../img/home-bg-min.png) no-repeat center;
-    background-size: cover; }
-    html body .home-title {
-      text-align: center;
-      padding-top: 170px; }
-      html body .home-title img {
-        width: 488px; }
-    html body .mask {
-      position: absolute;
-      left: 0;
-      top: 0;
+    overflow: hidden; }
+    html body .wrapper {
+      position: relative;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.4); }
+      overflow: hidden; }
+      html body .wrapper .div-bg {
+        z-index: 1; }
+      html body .wrapper .div-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: none; }
+        html body .wrapper .div-bg.active {
+          display: block; }
+    html body .home-title {
+      position: absolute;
+      z-index: 2;
+      text-align: center;
+      width: 100%;
+      top: 0;
+      padding-top: 200px; }
+      html body .home-title img {
+        width: 488px; }
 
 .nav {
+  position: absolute;
+  top: 320px;
+  z-index: 3;
+  margin-top: 1em;
   text-align: center; }
   .nav .menu {
     list-style: none;
