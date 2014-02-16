@@ -11,6 +11,11 @@ html {
         z-index:1;
       }
 
+      .main-logo,.sub{
+        position:absolute;
+        z-index:2;
+      }
+
       .div-bg{
         position:absolute;
         left:0;

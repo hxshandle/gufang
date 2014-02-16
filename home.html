@@ -24,12 +24,26 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="div-bg active" id="bg-1" style="width:100%;height:100%;background:url(img/home-bg.png) no-repeat center top;background-size:cover"></div>
-  <div class="div-bg" id="bg-2" style="width:100%;height:100%;background:url(img/home-bg-2.png) no-repeat center top;background-size:cover"></div>
-  <div class="div-bg" id="bg-3" style="width:100%;height:100%;background:url(img/home-bg-3.png) no-repeat center top;background-size:cover"></div>
+  <input type="button" id="start" value="start"/>
+  <input type="button" id="reset" value="reset"/>
+  <!-- for background image-->
+  <div class="div-bg" id="bg-1"
+       style="width:100%;height:100%;background:url(img/home-bg.png) no-repeat center top;background-size:cover"></div>
+  <div class="div-bg" id="bg-2"
+       style="width:100%;height:100%;background:url(img/home-bg-2.png) no-repeat center top;background-size:cover"></div>
+  <div class="div-bg" id="bg-3"
+       style="width:100%;height:100%;background:url(img/home-bg-3.png) no-repeat center top;background-size:cover"></div>
+  <!-- End of background-->
+  <!--
   <div class="home-title">
     <img src="img/index-guchuang-light.png" alt="">
   </div>
+  -->
+  <img src="img/index-guchuang-light.png" alt="" class="main-logo">
+  <img class="sub" id="commune" src="img/index-commune.png" alt="">
+  <img class="sub" id="gufang" src="img/index-gufangyinxiang.png" alt="">
+  <img class="sub" id="homme" src="img/index-homme.png" alt="">
+  <img class="sub" id="xinjie" src="img/index-xinjieliangpin.png" alt="">
 
   <div class="row nav">
     <ul class="menu">
@@ -58,10 +72,74 @@
           </a></li>
         </ul>
       </li>
-      <li><a class="link" href="">SUNJET新杰良品</a></li>
-      <li><a class="link" href="">X2HOMME</a></li>
-      <li><a class="link" href="">GFI古方印象</a></li>
-      <li><a class="link" href="">X3COMMUNE</a></li>
+      <li>
+        <a class="link" href="" data-bg="#bg-1">SUNJET新杰良品</a>
+        <ul class="menu-content">
+          <li><a href="" data-bg="#bg-2">
+            <div>BRAND INTRODUCTION</div>
+            <div>品牌介绍</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-3">
+            <div>STORE IMAGE</div>
+            <div>店面形象</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-1">
+            <div>PRODUCT PICTURE ALBUM</div>
+            <div>产品画册</div>
+          </a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="link" href="" data-bg="#bg-2">X2HOMME</a>
+        <ul class="menu-content">
+          <li><a href="" data-bg="#bg-2">
+            <div>BRAND INTRODUCTION</div>
+            <div>品牌介绍</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-3">
+            <div>STORE IMAGE</div>
+            <div>店面形象</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-1">
+            <div>PRODUCT PICTURE ALBUM</div>
+            <div>产品画册</div>
+          </a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="link" href=""  data-bg="#bg-3">GFI古方印象</a>
+        <ul class="menu-content">
+          <li><a href="" data-bg="#bg-2">
+            <div>BRAND INTRODUCTION</div>
+            <div>品牌介绍</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-3">
+            <div>BRAND ORIGIN</div>
+            <div>品牌缘起</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-1">
+            <div>VCR APPRECIATE</div>
+            <div>影像欣赏</div>
+          </a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="link" href=""  data-bg="#bg-1">X3COMMUNE</a>
+        <ul class="menu-content">
+          <li><a href="" data-bg="#bg-2">
+            <div>BRAND INTRODUCTION</div>
+            <div>品牌介绍</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-3">
+            <div>BRAND ORIGIN</div>
+            <div>品牌缘起</div>
+          </a></li>
+          <li><a href="" data-bg="#bg-1">
+            <div>VCR APPRECIATE</div>
+            <div>影像欣赏</div>
+          </a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>
@@ -70,7 +148,9 @@
 <script src="js/vendor/jquery-ui.js"></script>
 <script src="js/vendor/jMenu.jquery.js"></script>
 <script src="js/vendor/TweenMax-1.11.4.min.js"></script>
+<script src="js/vendor/jquery.jrumble.1.3.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>

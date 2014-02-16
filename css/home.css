@@ -9,6 +9,9 @@ html {
       overflow: hidden; }
       html body .wrapper .div-bg {
         z-index: 1; }
+      html body .wrapper .main-logo, html body .wrapper .sub {
+        position: absolute;
+        z-index: 2; }
       html body .wrapper .div-bg {
         position: absolute;
         left: 0;

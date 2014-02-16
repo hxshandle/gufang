@@ -7,6 +7,9 @@ html {
     min-height: 700px;
     background: #24211B; }
 
+.none {
+  display: none; }
+
 .row {
   width: 100%;
   margin: 0 auto; }
