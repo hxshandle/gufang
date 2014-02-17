@@ -9,8 +9,8 @@
       vw = $(window).width();
 
   //center the main logo
-  var LOGO_WIDTH = 626,
-      LOGO_HEIGHT = 130;
+  var LOGO_WIDTH = 488,
+      LOGO_HEIGHT = 101;
   var baseX = ((vw - LOGO_WIDTH) / 2),
       baseY = ((vh - LOGO_HEIGHT) / 2);
 
@@ -21,25 +21,24 @@
   });
 
   $('#commune').css({
-    'left': (baseX + 370) + 'px',
-    'top': (baseY) + 'px'
+    'left': (baseX + 300) + 'px',
+    'top': (baseY-20) + 'px'
   });
   $('#homme').css({
-    'left': (baseX + 320) + 'px',
-    'top': (baseY + 70) + 'px'
+    'left': (baseX + 250) + 'px',
+    'top': (baseY + 40) + 'px'
   });
   $('#gufang').css({
-    'left': (baseX + 50) + 'px',
-    'top': (baseY + 20) + 'px'
+    'left': (baseX + 30) + 'px',
+    'top': (baseY ) + 'px'
   });
   $('#xinjie').css({
     'left': (baseX - 90) + 'px',
-    'top': (baseY + 80) + 'px'
+    'top': (baseY + 70) + 'px'
   });
 
 
   var centerX = vw / 2 - 100, centerY = vh / 2-20, a = 300, b = 100, t = 0;
-
   function ovalTrans() {
     var t1 = t + 45, t2 = t + 135, t3 = t + 225, t4 = t + 315;
     var ts = [t , t + 30, t + 60, t+90 ];
@@ -70,9 +69,11 @@
   }
 
 
+  /*
   var intervaler = setInterval(function () {
     ovalTrans();
   });
+  */
 
 
   // init menu
@@ -105,7 +106,6 @@
       opacity: 1,
       ease: Power1.easeInOut,
       onComplete: function () {
-        clearInterval(intervaler);
         TweenMax.to('.main-logo', 1, {top: 200,
           ease: Power1.easeOut,
           onComplete: function () {

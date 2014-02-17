@@ -11,6 +11,10 @@ html {
         z-index:1;
       }
 
+      .main-logo{
+        width:488px;
+      }
+
       .main-logo,.sub{
         position:absolute;
         z-index:2;
@@ -25,18 +29,6 @@ html {
         &.active{
           display:block;
         }
-      }
-    }
-
-    .home-title {
-      position:absolute;
-      z-index:2;
-      text-align: center;
-      width:100%;
-      top:0;
-      padding-top: 200px;
-      img {
-        width: 488px;
       }
     }
   }

@@ -9,6 +9,8 @@ html {
       overflow: hidden; }
       html body .wrapper .div-bg {
         z-index: 1; }
+      html body .wrapper .main-logo {
+        width: 488px; }
       html body .wrapper .main-logo, html body .wrapper .sub {
         position: absolute;
         z-index: 2; }
@@ -20,15 +22,6 @@ html {
         display: none; }
         html body .wrapper .div-bg.active {
           display: block; }
-    html body .home-title {
-      position: absolute;
-      z-index: 2;
-      text-align: center;
-      width: 100%;
-      top: 0;
-      padding-top: 200px; }
-      html body .home-title img {
-        width: 488px; }
 
 .nav {
   position: absolute;
