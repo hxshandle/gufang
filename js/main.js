@@ -1,13 +1,11 @@
-(function() {
-	$('.menu').jMenu();
-	// Handle menu bg change
-	$('.menu a').hover(function(event) {
-		var $this = $(this);
-		var bgEl = $this.data('bg');
-		if (bgEl) {
-      $('.div-bg.active').removeClass('active');
-      $(bgEl).addClass('active');
-		}
-	});
-})();
+var curBg = null;
+function changeBg(id){
+  if(!id || curBg == id){
+    return;
+  }
+  $('#'+curBg).animate({opacity:0},500).hide();
+  $('#'+id).css({opacity:0}).animate({opacity:1},500);
+  curBg = id;
 
+
+}

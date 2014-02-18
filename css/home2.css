@@ -1,0 +1,87 @@
+html {
+  height: 100%; }
+  html body {
+    height: 100%; }
+    html body .wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+      html body .wrapper .div-bg {
+        z-index: 1; }
+      html body .wrapper .main-logo {
+        width: 488px; }
+      html body .wrapper .main-logo, html body .wrapper .sub {
+        position: absolute;
+        z-index: 2; }
+      html body .wrapper .div-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        display: none; }
+        html body .wrapper .div-bg.active {
+          display: block; }
+
+.main {
+  z-index: 99;
+  position: relative;
+  width: 960px;
+  height: 100%;
+  margin: 0 auto; }
+  .main ul {
+    width: 960px;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .main ul li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      float: left;
+      height: 100%;
+      color: #ccc;
+      width: 192px; }
+      .main ul li.brand {
+        width: 198px; }
+      .main ul li.xjlp {
+        width: 224px; }
+      .main ul li.h2homme {
+        width: 161px; }
+      .main ul li.gfi {
+        width: 174px; }
+      .main ul li.x3commune {
+        width: 170px; }
+      .main ul li.split {
+        width: 25px; }
+        .main ul li.split div {
+          height: 1em;
+          border-left: 1px solid #fff;
+          top: 50%;
+          position: absolute;
+          margin-top: -2.2em;
+          font-size: 1.125em; }
+      .main ul li .tl {
+        position: absolute;
+        top: 50%;
+        font-size: 1.375em;
+        /*22px*/
+        margin-top: -2em;
+        padding-bottom: 1em;
+        /*22px*/ }
+        .main ul li .tl.active {
+          color: #fff;
+          font-style: bold;
+          border-bottom: 1px solid; }
+      .main ul li .cont {
+        position: absolute;
+        display: none;
+        top: 50%;
+        font-size: 0.875em;
+        /*14px*/
+        margin-top: 1.714em; }
+        .main ul li .cont .item {
+          margin-top: 2em;
+          /*28px*/
+          width: 90%; }
