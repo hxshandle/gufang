@@ -20,10 +20,10 @@ html {
         height: 100%;
         left: 0;
         top: 0;
-        overflow: hidden; }
+        overflow: hidden;
+        z-index: 1; }
         html body .wrapper .main-bg img {
           border: none;
-          position: absolute;
           left: 0;
           top: 0; }
 
@@ -32,7 +32,8 @@ html {
   position: relative;
   width: 960px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: url(img/transparency_bg.png); }
   .main ul {
     display: none;
     width: 960px;

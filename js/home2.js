@@ -54,8 +54,9 @@
     $(this).css({'color':'#ccc'});
   });
 
+
   $(function(){
-    TweenMax.to('.main-logo', 1, {
+    TweenMax.to('.main-logo', 3, {
       opacity: 1,
       ease: Power1.easeInOut,
       onComplete: function() {
@@ -63,6 +64,8 @@
           top: 270,
           ease: Power1.easeOut,
           onComplete: function() {
+            console.log($('.menu :first').data("url"));
+            $('.menu :first').trigger("mouseover");
             $('.menu').fadeIn(1000);
           }
         });

@@ -35,7 +35,7 @@ function initImg(imgArr) {
 
 
 var $mainBg = $(".main-bg"),
-    curUrl = $(".index-main").attr("data-url");
+    curUrl = $(".wrapper").attr("data-url");
 
 $("[data-url]").on("mouseover", function(e) {
     var imgUrl = $(this).attr("data-url"),

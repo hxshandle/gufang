@@ -25,9 +25,9 @@ html {
         left:0;
         top:0;
         overflow: hidden;
+        z-index: 1;
         img{
           border:none;
-          position:absolute;
           left:0;
           top:0;
         }
@@ -42,6 +42,7 @@ html {
   width:960px;
   height:100%;
   margin:0 auto;
+  background:url(img/transparency_bg.png);
   
   ul{
     display: none;
