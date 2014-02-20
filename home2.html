@@ -18,50 +18,41 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/jmenu.css">
   <link rel="stylesheet" href="css/home2.css">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
-<body>
+<body style="zoom:1">
 <div class="wrapper">
-  <input type="button" id="start" value="start"/>
-  <input type="button" id="reset" value="reset"/>
-  <!-- for background image-->
-  <div class="div-bg" id="bg-1"
-       style="width:100%;height:100%;background:url(img/home-bg.png) no-repeat center top;background-size:cover"></div>
-  <div class="div-bg" id="bg-2"
-       style="width:100%;height:100%;background:url(img/home-bg-2.png) no-repeat center top;background-size:cover"></div>
-  <div class="div-bg" id="bg-3"
-       style="width:100%;height:100%;background:url(img/home-bg-3.png) no-repeat center top;background-size:cover"></div>
-  <!-- End of background-->
+  <p class="main-bg"></p>
+  
   <img src="img/index-guchuang-light.png" alt="" class="main-logo">
   <img class="sub" id="commune" src="img/index-commune.png" alt="">
   <img class="sub" id="gufang" src="img/index-gufangyinxiang.png" alt="">
   <img class="sub" id="homme" src="img/index-homme.png" alt="">
   <img class="sub" id="xinjie" src="img/index-xinjieliangpin.png" alt="">
-
+  
   <div class="main">
     <ul class="menu">
-      <li class="brand">
-        <div class="tl" data-bg="bg-1">GUCHUANG古创</div>
+      <li class="brand" data-url="img/home-bg.png">
+        <div class="tl">GUCHUANG古创</div>
         <div class="cont">
-          <div class="item-first">
+          <div class="item-first" data-url="img/home-bg-2.png">
             <div>COMPANY PROFILE</div>
             <div>公司简介</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-3.png">
             <div>COMPANY INFORMATION</div>
             <div>公司资讯</div>
           </div>
-          <div class="item" style="width:80%">
+          <div class="item" style="width:80%" data-url="img/home-bg-2.png">
             <div>CHINA MERCHANTS TO JOIN</div>
             <div>招商加盟</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-3.png">
             <div>RECRUITMENT</div>
             <div>招聘</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg.png">
             <div>CONTACT US</div>
             <div>联系我们</div>
           </div>
@@ -72,81 +63,78 @@
         <div></div>
       </li>
 
-      <li class="xjlp">
+      <li class="xjlp" data-url="img/home-bg-2.png">
         <div class="tl"  data-bg="bg-2">SUNJET新杰良品</div>
         <div class="cont">
-          <div class="item-first">
+          <div class="item-first" data-url="img/home-bg-2.png">
             <div>BRAND INTRODUCTION</div>
             <div>品牌介绍</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>STORE IMAGE</div>
             <div>店面形象</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>PRODUCT PICTURE ALBUM</div>
             <div>产品画册</div>
           </div>
         </div>
       </li>
 
-      <li class="h2homme">
+      <li class="h2homme" data-url="img/home-bg-3.png">
         <div class="tl"  data-bg="bg-3">X2HOMME</div>
         <div class="cont">
-          <div class="item-first">
+          <div class="item-first" data-url="img/home-bg-2.png">
             <div>BRAND INTRODUCTION</div>
             <div>品牌介绍</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>STORE IMAGE</div>
             <div>店面形象</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>PRODUCT PICTURE ALBUM</div>
             <div>产品画册</div>
           </div>
         </div>
       </li>
 
-      <li class="gfi">
+      <li class="gfi" data-url="img/home-bg.png">
         <div class="tl"  data-bg="bg-1">GFI古方印象</div>
         <div class="cont">
-          <div class="item-first">
+          <div class="item-first" data-url="img/home-bg.png">
             <div>BRAND INTRODUCTION</div>
             <div>品牌介绍</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-3.png">
             <div>BRAND ORIGIN</div>
             <div>品牌缘起</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>VCR APPRECIATE</div>
             <div>影像欣赏</div>
           </div>
         </div>
       </li>
 
-      <li class="x3commune">
+      <li class="x3commune" data-url="img/home-bg-2.png">
         <div class="tl"  data-bg="bg-2">X3COMMUNE</div>
         <div class="cont">
-          <div class="item-first">
+          <div class="item-first" data-url="img/home-bg-2.png">
             <div>BRAND INTRODUCTION</div>
             <div>品牌介绍</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-3.png">
             <div>BRAND ORIGIN</div>
             <div>品牌缘起</div>
           </div>
-          <div class="item">
+          <div class="item" data-url="img/home-bg-2.png">
             <div>VCR APPRECIATE</div>
             <div>影像欣赏</div>
           </div>
         </div>
       </li>
-
-
     </ul>
-
   </div>
 </div>
 

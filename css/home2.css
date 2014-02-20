@@ -6,36 +6,43 @@ html {
       position: relative;
       width: 100%;
       height: 100%;
+      z-index: 1;
       overflow: hidden; }
-      html body .wrapper .div-bg {
-        z-index: 1; }
       html body .wrapper .main-logo {
         width: 488px; }
       html body .wrapper .main-logo, html body .wrapper .sub {
         position: absolute;
         z-index: 2; }
-      html body .wrapper .div-bg {
+      html body .wrapper .main-bg {
         position: absolute;
+        margin: 0;
+        width: 100%;
+        height: 100%;
         left: 0;
         top: 0;
-        height: 100%;
-        display: none; }
-        html body .wrapper .div-bg.active {
-          display: block; }
+        overflow: hidden; }
+        html body .wrapper .main-bg img {
+          border: none;
+          position: absolute;
+          left: 0;
+          top: 0; }
 
 .main {
-  z-index: 99;
+  z-index: 200;
   position: relative;
   width: 960px;
   height: 100%;
   margin: 0 auto; }
   .main ul {
+    display: none;
     width: 960px;
     height: 100%;
     list-style: none;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    z-index: 100; }
     .main ul li {
+      position: relative;
       padding: 0;
       margin: 0;
       list-style: none;
@@ -85,3 +92,5 @@ html {
           margin-top: 2em;
           /*28px*/
           width: 90%; }
+        .main ul li .cont .item, .main ul li .cont .item-first {
+          cursor: pointer; }

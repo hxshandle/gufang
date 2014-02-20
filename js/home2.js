@@ -42,29 +42,28 @@
   function() {
     $('.tl', this).addClass('active');
     $('.cont', this).slideDown();
-    changeBg($('.tl', this).data('bg'));
   },
   function() {
     $('.tl', this).removeClass('active');
     $('.cont', this).stop().slideUp();
   });
 
-  // hidden menu first
-  $('.div-bg').addClass("none");
+  $('.item,.item-first').hover(function(){
+    $(this).css({'color':'#fff'});
+  },function(){
+    $(this).css({'color':'#ccc'});
+  });
 
-  $('#start').click(function() {
-    TweenMax.to('.main-logo', 3, {
+  $(function(){
+    TweenMax.to('.main-logo', 1, {
       opacity: 1,
       ease: Power1.easeInOut,
       onComplete: function() {
         TweenMax.to('.main-logo', 1, {
-          top: 200,
+          top: 270,
           ease: Power1.easeOut,
           onComplete: function() {
-            $('.div-bg').removeClass('none');
-            $('.div-bg').filter(':first').fadeIn(1500, function() {
-              $('.menu').fadeIn(1000);
-            });
+            $('.menu').fadeIn(1000);
           }
         });
       }
