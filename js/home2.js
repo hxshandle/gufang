@@ -54,6 +54,9 @@
     $(this).css({'color':'#ccc'});
   });
 
+  function initDefaultBg(){
+    changeImg.call($('.menu :first').get(0));
+  }
 
   $(function(){
     TweenMax.to('.main-logo', 3, {
@@ -64,9 +67,8 @@
           top: 270,
           ease: Power1.easeOut,
           onComplete: function() {
-            console.log($('.menu :first').data("url"));
-            $('.menu :first').trigger("mouseover");
-            $('.menu').fadeIn(1000);
+            initDefaultBg();
+            $('.menu').delay(1000).fadeIn();
           }
         });
       }

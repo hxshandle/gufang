@@ -3,76 +3,101 @@ function initImg(imgArr) {
 
   $imgArr.each(function() {
     var $img = $(this).find("img:last"),
-      width = $(this).width(),
-      height = $(this).height(),
-      imgWidth = $img.width(),
-      imgHeight = $img.height();
+    width = $(this).width(),
+    height = $(this).height(),
+    imgWidth = $img.width(),
+    imgHeight = $img.height();
 
-    $(this).css({"overflow": "hidden"});
+    $(this).css({
+      "overflow": "hidden"
+    });
     if ($(this).css("position") != "absolute") {
-      $(this).css({"position": "relative"});
+      $(this).css({
+        "position": "relative"
+      });
     }
 
-    if (imgWidth/width < 1 || imgHeight/height < 1) {
-      if (imgWidth/width < imgHeight/height) {
+    if (imgWidth / width < 1 || imgHeight / height < 1) {
+      if (imgWidth / width < imgHeight / height) {
 
         $img.width(width);
         $img.height("auto");
-        $img.css({"position": "absolute", "left": "0", "top": -($img.height()-height)/2});
+        $img.css({
+          "position": "absolute",
+          "left": "0",
+          "top": -($img.height() - height) / 2
+        });
       } else {
 
         $img.width("auto");
         $img.height(height);
-        $img.css({"position": "absolute", "top": "0", "left": -($img.width()-width)/2});
+        $img.css({
+          "position": "absolute",
+          "top": "0",
+          "left": -($img.width() - width) / 2
+        });
       }
     } else {
-      $img.css({"position": "absolute",  "left": -($img.width()-width)/2});
+      $img.css({
+        "position": "absolute",
+        "left": -($img.width() - width) / 2
+      });
     }
-  
 
   });
 }
 
+function changeImg(e) {
+  var imgUrl = $(this).attr("data-url"),
+  newImg = new Image(),
+  $self = $(this),
+  $imgArr = $mainBg.find("img"),
+  curImg = $mainBg.find("img:last");
+  if (e) {
+    e.stopPropagation();
+  }
+  if (curUrl == imgUrl) {
+    return;
+  }
 
-var $mainBg = $(".main-bg"),
-    curUrl = $(".wrapper").attr("data-url");
+  newImg.onload = function(e) {
+    initImg($mainBg);
+    $(".load").hide();
 
-$("[data-url]").on("mouseover", function(e) {
-    var imgUrl = $(this).attr("data-url"),
-      newImg = new Image(),
-      $self = $(this),
-      $imgArr = $mainBg.find("img"),
-      curImg = $mainBg.find("img:last");
-
-      e.stopPropagation();
-
-    if (curUrl == imgUrl) {
-      return;
-    }
-
-    newImg.onload = function(e) {
-
-      initImg($mainBg);
-      $(".load").hide();
-
-      $imgArr.each(function() {
-        if ($(this).attr("url") == imgUrl) {
-          $(this).hide();
-        }
-      });
-
-      $(newImg).stop().animate({opacity: 1}, 1000, function() {
-        $imgArr.remove();
-      });
-    }
-
-    newImg.src = imgUrl;
-    $(".load").show();
-    $(newImg).css("opacity", "0");
-    $mainBg.append(newImg);
-    curImg.stop().animate({opacity: 0}, 800, function() {
-      curImg.remove();
+    $imgArr.each(function() {
+      if ($(this).attr("url") == imgUrl) {
+        $(this).hide();
+      }
     });
 
-    curUrl = imgUrl;
+    $(newImg).stop().animate({
+      opacity: 1
+    },
+    1000,
+    function() {
+      $imgArr.remove();
+    });
+  }
+
+  newImg.src = imgUrl;
+  $(".load").show();
+  $(newImg).css("opacity", "0");
+  $mainBg.append(newImg);
+  curImg.stop().animate({
+    opacity: 0
+  },
+  1000,
+  function() {
+    curImg.remove();
   });
+
+  curUrl = imgUrl;
+}
+
+var $mainBg = $(".main-bg"),
+curUrl = $(".wrapper").attr("data-url");
+
+$("[data-url]").on("mouseover",
+function(e) {
+  changeImg.call(this, e);
+});
