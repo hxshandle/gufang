@@ -64,7 +64,7 @@
       ease: Power1.easeInOut,
       onComplete: function() {
         TweenMax.to('.main-logo', 1, {
-          top: 270,
+          top: vh/2 - 180,
           ease: Power1.easeOut,
           onComplete: function() {
             initDefaultBg();
