@@ -89,6 +89,9 @@ html {
         font-size: 0.875em;
         /*14px*/
         margin-top: 1.714em; }
+        .main ul li .cont a {
+          text-decoration: none;
+          color: #ccc; }
         .main ul li .cont .item {
           margin-top: 2em;
           /*28px*/
