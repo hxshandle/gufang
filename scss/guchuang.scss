@@ -30,8 +30,6 @@ body{
       height:100%;
       background:#fff;
       overflow:hidden;
-      img{
-      }
     }// END of left
     .right{
       float:left;
@@ -41,6 +39,11 @@ body{
       .middle-floater{
         top:50%;
         margin-bottom:-180px;
+      }
+      .icon{
+        position:absolute;
+        left:-10px;
+        top:50%;
       }
       .cont{
         width:356px;
