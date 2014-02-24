@@ -1,0 +1,67 @@
+body {
+  height: 100%;
+  min-width: 1024px; }
+  body .top-header {
+    text-align: center;
+    padding: 20px 0; }
+  body .footer {
+    height: 32px;
+    background: #716F6E;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 10px; }
+    body .footer span {
+      line-height: 32px;
+      padding-right: 10px; }
+      body .footer span a {
+        color: #fff;
+        text-decoration: none; }
+  body .main {
+    position: relative; }
+    body .main .left {
+      float: left;
+      width: 60%;
+      height: 100%;
+      background: #fff;
+      overflow: hidden; }
+    body .main .right {
+      float: left;
+      width: 40%;
+      height: 100%;
+      position: relative; }
+      body .main .right .middle-floater {
+        top: 50%;
+        margin-bottom: -180px; }
+      body .main .right .cont {
+        width: 356px;
+        height: 360px;
+        margin: 0 auto; }
+        body .main .right .cont .h1 {
+          font-size: 1.571em;
+          display: block; }
+        body .main .right .cont .h2 {
+          font-size: 1em;
+          display: block; }
+        body .main .right .cont p {
+          font-size: 0.875em;
+          margin: 1.429em 0; }
+  body .top-menu {
+    margin: 0 auto;
+    background: #fff;
+    height: 32px; }
+    body .top-menu ul {
+      width: 760px;
+      margin: 0 auto; }
+      body .top-menu ul li {
+        float: left;
+        line-height: 32px;
+        cursor: pointer; }
+        body .top-menu ul li.item {
+          margin-left: 64px; }
+        body .top-menu ul li:hover a {
+          text-decoration: underline; }
+        body .top-menu ul li a {
+          color: #24211d;
+          font-size: 0.875em; }

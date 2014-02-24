@@ -1,0 +1,91 @@
+body{
+  height:100%;
+  min-width:1024px;
+  .top-header{
+    text-align:center;
+    padding:20px 0;
+  }// End of top header
+  .footer{
+    height:32px;
+    background:#716F6E;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    color:#fff;
+    font-size:10px;
+    span{
+      line-height:32px;
+      padding-right:10px;
+      a{
+        color:#fff;
+        text-decoration:none;
+      }
+    }
+  }// End of footer
+  .main{
+    position:relative;
+    .left{
+      float:left;
+      width:60%;
+      height:100%;
+      background:#fff;
+      overflow:hidden;
+      img{
+      }
+    }// END of left
+    .right{
+      float:left;
+      width:40%;
+      height:100%;
+      position:relative;
+      .middle-floater{
+        top:50%;
+        margin-bottom:-180px;
+      }
+      .cont{
+        width:356px;
+        height:360px;
+        margin:0 auto;
+        .h1{
+          font-size:1.571em;
+          display:block;
+        }
+        .h2{
+          font-size:1em;
+          display:block;
+        }
+        p{
+          font-size:0.875em;
+          margin:1.429em 0;
+        }
+      }
+    }// End of right
+  }// End of main
+  .top-menu{
+    margin:0 auto;
+    background:#fff;
+    height:32px;
+    ul{
+      width:760px;
+      margin:0 auto;
+      li{
+        float:left;
+        line-height:32px;
+        cursor:pointer;
+        &.item{
+          margin-left:64px;
+        }
+        &:hover{
+          a{
+            text-decoration:underline;
+          }
+        }
+        a{
+          color:#24211d;
+          font-size:0.875em;
+        }
+      }
+    }// End of ul
+  }// End of menu
+}
+

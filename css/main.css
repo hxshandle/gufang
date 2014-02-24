@@ -5,7 +5,8 @@ html {
     height: 100%;
     min-width: 1024px;
     min-height: 700px;
-    background: #24211B; }
+    background: #24211B;
+    color: #fff; }
 
 .none {
   display: none; }
@@ -20,3 +21,8 @@ html {
     content: ' ';
     display: table;
     clear: both; }
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
