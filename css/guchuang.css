@@ -50,7 +50,8 @@ body {
   body .top-menu {
     margin: 0 auto;
     background: #fff;
-    height: 32px; }
+    height: 32px;
+    padding-bottom: 1px; }
     body .top-menu ul {
       width: 760px;
       margin: 0 auto; }
