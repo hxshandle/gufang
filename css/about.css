@@ -20,6 +20,8 @@
     .main .right .about-cont .history, .main .right .about-cont .news {
       font-size: 0.75em; }
       .main .right .about-cont .history .header, .main .right .about-cont .news .header {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
         padding-left: 1.333em;
         padding-right: 4px;
         margin-top: 20px;
@@ -28,16 +30,16 @@
         line-height: 2em;
         color: #fff;
         background: #000; }
-        .main .right .about-cont .history .header .point, .main .right .about-cont .history .header .point-act, .main .right .about-cont .news .header .point, .main .right .about-cont .news .header .point-act {
+        .main .right .about-cont .history .header .point, .main .right .about-cont .news .header .point {
           width: 6px;
           height: 100%;
           display: inline-block;
           float: right;
           cursor: pointer;
-          background: url(../img/cycle-point.png) no-repeat 0px center;
+          background: url(../img/cycle-point.png) no-repeat -11px center;
           margin-right: 5px; }
         .main .right .about-cont .history .header .point-act, .main .right .about-cont .news .header .point-act {
-          background: url(../img/cycle-point.png) no-repeat -11px center; }
+          background: url(../img/cycle-point.png) no-repeat 0px center; }
       .main .right .about-cont .history ul, .main .right .about-cont .news ul {
         margin-top: 32px; }
         .main .right .about-cont .history ul li, .main .right .about-cont .news ul li {
@@ -48,6 +50,22 @@
     .main .right .about-cont .history ul li span:last-child {
       display: inline-block;
       width: 400px; }
+    .main .right .about-cont .news .news-outer {
+      position: relative;
+      width: 460px;
+      overflow: hidden;
+      height: 230px; }
+      .main .right .about-cont .news .news-outer ul {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        filter: alpha(opacity=0); }
+        .main .right .about-cont .news .news-outer ul.act {
+          display: block;
+          opacity: 1;
+          filter: alpha(opacity=100); }
     .main .right .about-cont .news ul li span:first-child {
       display: inline-block;
       width: 300px; }

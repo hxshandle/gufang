@@ -27,6 +27,8 @@
       .history,.news{
         font-size:0.75em;//12px
         .header{
+          box-sizing:border-box;
+          -moz-box-sizing:border-box;
           padding-left:1.333em;
           padding-right:4px;
           margin-top:20px;
@@ -35,17 +37,17 @@
           line-height:2em;//24px;
           color:#fff;
           background:#000;
-          .point,.point-act{
+          .point{
             width:6px;
             height:100%;;
             display:inline-block;
             float:right;
             cursor:pointer;
-            background:url(../img/cycle-point.png) no-repeat 0px center;
+            background:url(../img/cycle-point.png) no-repeat -11px center;
             margin-right:5px;
           }
           .point-act{
-            background:url(../img/cycle-point.png) no-repeat -11px center;
+            background:url(../img/cycle-point.png) no-repeat 0px center;
           }
         }//END .header
         ul{
@@ -68,6 +70,25 @@
         }//END .span
       }//ENd .history
       .news{
+        .news-outer{
+          position:relative;
+          width:460px;
+          overflow:hidden;
+          height:230px;
+          ul{
+            position:absolute;
+            width:100%;
+            left:0;
+            top:0;
+            opacity:0;
+            filter: alpha(opacity=0);
+            &.act{
+              display:block;
+              opacity:1;
+              filter: alpha(opacity=100);
+            }
+          }
+        }
         ul li span{
           &:first-child{
             display:inline-block;
