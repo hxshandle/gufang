@@ -1,0 +1,75 @@
+.main{
+  background:#C1C0BE;
+  .left,.right{
+    float:left;
+    width:50%;
+    position:relative;
+  }
+  .left{
+  }
+  .right{
+    .about-cont{
+      color:#24211D;
+      padding-top:40px;
+      .h1{
+        font-size:2em;
+        display:block;
+      }
+      .h2{
+        font-size:1.375em;
+        display:block;
+      }
+      .history,.news{
+        font-size:0.75em;//12px
+        .header{
+          padding-left:1.333em;
+          padding-right:4px;
+          margin-top:20px;
+          width:460px;
+          height:2em;//24px;
+          line-height:2em;//24px;
+          color:#fff;
+          background:#000;
+          .point,.point-act{
+            width:6px;
+            height:100%;;
+            display:inline-block;
+            float:right;
+            cursor:pointer;
+            background:url(../img/cycle-point.png) no-repeat 0px center;
+            margin-right:5px;
+          }
+          .point-act{
+            background:url(../img/cycle-point.png) no-repeat -11px center;
+          }
+        }//END .header
+        ul{
+          margin-top:32px;
+          li{
+            margin:4px 0;
+          }
+        }
+      }
+      .history{
+        ul li span{
+          &:first-child{
+            display:inline-block;
+            float:left;
+          }
+          &:last-child{
+            display:inline-block;
+            width:400px;
+          }
+        }//END .span
+      }//ENd .history
+      .news{
+        ul li span{
+          &:first-child{
+            display:inline-block;
+            width:300px;
+          }
+        }
+      }
+    }// END .about-count
+  }// END .right
+}
