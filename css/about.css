@@ -4,6 +4,10 @@
     float: left;
     width: 50%;
     position: relative; }
+  .main .left img {
+    float: right;
+    margin-right: 6.25em;
+    margin-top: 0.625em; }
   .main .right .about-cont {
     color: #24211D;
     padding-top: 40px; }
