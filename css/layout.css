@@ -3,7 +3,8 @@ body {
   min-width: 1024px; }
   body .top-header {
     text-align: center;
-    padding: 20px 0; }
+    padding: 20px 0;
+    background: #24211B; }
   body .footer {
     height: 32px;
     background: #716F6E;

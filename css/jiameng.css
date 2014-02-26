@@ -1,0 +1,50 @@
+html body {
+  background: #c1c0bf; }
+  html body .main {
+    width: 100%;
+    color: #333;
+    background: url(../img/img-2.jpg) no-repeat right; }
+    html body .main .main-inner {
+      width: 1000px;
+      margin: 0 auto; }
+    html body .main .left {
+      float: left;
+      width: 14.375em;
+      height: 100%; }
+      html body .main .left .mt10em {
+        margin-top: 10em; }
+      html body .main .left .h1 {
+        font-size: 2em;
+        color: #24211d; }
+      html body .main .left .h2 {
+        font-size: 1.375em;
+        color: #24211d; }
+    html body .main .right {
+      float: left;
+      height: 100%; }
+      html body .main .right .merchant-cont {
+        padding-top: 6.875em; }
+        html body .main .right .merchant-cont .h2 {
+          display: block;
+          font-size: 1.375em; }
+        html body .main .right .merchant-cont .h1 {
+          font-size: 2em;
+          font-weight: bold; }
+        html body .main .right .merchant-cont .mt60 {
+          margin-top: 3.75em; }
+        html body .main .right .merchant-cont .section .header {
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          font-size: 0.875em;
+          line-height: 1.857em;
+          width: 47.5em;
+          height: 1.875em;
+          background: #605d5c;
+          color: #fff;
+          padding-left: 0.857em; }
+        html body .main .right .merchant-cont .section ul {
+          padding-top: 1.25em; }
+          html body .main .right .merchant-cont .section ul li {
+            font-size: 0.75em;
+            margin: 4px 0;
+            padding-left: 1em; }
