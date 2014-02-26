@@ -37,4 +37,5 @@ body {
           text-decoration: underline; }
         body .top-menu ul li a {
           color: #24211d;
-          font-size: 0.875em; }
+          font-size: 0.875em;
+          text-decoration: none; }
