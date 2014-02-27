@@ -1,0 +1,57 @@
+html body .main {
+  background: #c1c0bf;
+  overflow: hidden; }
+  html body .main .top-img {
+    width: 100%;
+    height: 268px;
+    background: url(../img/img-4.jpg) no-repeat center; }
+  html body .main .contact-cont {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    color: #24211d; }
+    html body .main .contact-cont .left, html body .main .contact-cont .mid, html body .main .contact-cont .right {
+      float: left;
+      height: 100%; }
+    html body .main .contact-cont .left {
+      width: 15em;
+      margin-top: 10em; }
+      html body .main .contact-cont .left .h1 {
+        display: block;
+        font-size: 2em; }
+      html body .main .contact-cont .left .h2 {
+        display: block;
+        font-size: 1.375em; }
+    html body .main .contact-cont .mid {
+      width: 25em;
+      position: relative; }
+      html body .main .contact-cont .mid .bracket {
+        position: absolute;
+        top: 10em;
+        right: 0; }
+      html body .main .contact-cont .mid .mid-cont {
+        width: 20.625em;
+        margin: 0 auto;
+        margin-top: 9em; }
+        html body .main .contact-cont .mid .mid-cont .h1 {
+          font-size: 2em;
+          font-weight: bold; }
+        html body .main .contact-cont .mid .mid-cont .h2 {
+          font-size: 0.938em; }
+        html body .main .contact-cont .mid .mid-cont .mt22 {
+          margin-top: 1.375em; }
+        html body .main .contact-cont .mid .mid-cont .mt18 {
+          margin-top: 1.125em; }
+        html body .main .contact-cont .mid .mid-cont .txt-row .t1 {
+          font-size: 1em; }
+        html body .main .contact-cont .mid .mid-cont .txt-row .t2 {
+          font-size: 0.75em; }
+    html body .main .contact-cont .right {
+      width: 22.5em; }
+      html body .main .contact-cont .right ul {
+        padding-left: 2.5em;
+        margin-top: 15em; }
+        html body .main .contact-cont .right ul li {
+          list-style: initial;
+          font-size: 0.875em;
+          margin: 4px 0; }
