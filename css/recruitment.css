@@ -1,0 +1,52 @@
+.main .left, .main .right {
+  float: left;
+  width: 50%;
+  height: 100%; }
+.main .left {
+  overflow: hidden; }
+  .main .left img {
+    width: 100%; }
+.main .right {
+  background: #4e4b49;
+  position: relative; }
+  .main .right .recruitment-cont {
+    margin-left: 15%;
+    margin-top: 15%;
+    color: #fff; }
+    .main .right .recruitment-cont .h2 {
+      line-height: 1em;
+      margin-top: -4px; }
+    .main .right .recruitment-cont .h3 {
+      margin: 8px 0px; }
+    .main .right .recruitment-cont .section {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      margin-top: 2em; }
+      .main .right .recruitment-cont .section .header {
+        background: #fff;
+        width: 90%;
+        height: 1.818em;
+        line-height: 1.818em;
+        font-size: 1.375em;
+        color: #24211d; }
+      .main .right .recruitment-cont .section ul {
+        margin-top: 1.25em;
+        margin-bottom: 1.625em;
+        width: 90%; }
+        .main .right .recruitment-cont .section ul li {
+          font-size: 0.75em;
+          color: #fff; }
+      .main .right .recruitment-cont .section .text-row {
+        font-size: 0.75em; }
+        .main .right .recruitment-cont .section .text-row span {
+          display: inline-block;
+          float: left; }
+        .main .right .recruitment-cont .section .text-row div {
+          width: 25em;
+          float: left; }
+    .main .right .recruitment-cont .more-info {
+      font-size: 0.875em;
+      color: #ccc;
+      position: absolute;
+      bottom: 2em;
+      width: 80%; }

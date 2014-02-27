@@ -1,0 +1,70 @@
+.main{
+  .left,.right{
+    float:left;
+    width:50%;
+    height:100%;
+  }
+  .left{
+    overflow:hidden;
+    img{
+      width:100%;
+    }
+  }
+  .right{
+    background:#4e4b49;
+    position:relative;
+    .recruitment-cont{
+      margin-left:15%;
+      margin-top:15%;
+      color:#fff;
+      .h2{
+        line-height:1em;
+        margin-top:-4px;
+      }
+      .h3{
+        margin:8px 0px;
+      }
+
+      .section{
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        margin-top:2em;
+        .header{
+          background:#fff;
+          width:90%;
+          height:1.818em;//40px;
+          line-height:1.818em;
+          font-size:1.375em;//22px
+          color:#24211d;
+        }
+        ul{
+          margin-top:1.25em;// 20px;
+          margin-bottom:1.625em;// 26px;
+          width:90%;
+          li{
+            font-size:0.75em;// 12px;
+            color:#fff;
+          }
+        }
+        .text-row{
+          font-size:0.75em;// 12px;
+          span{
+            display:inline-block;
+            float:left;
+          }
+          div{
+            width:25em;// 300px
+            float:left;
+         } 
+        }// END .text-row
+      }//END .section
+      .more-info{
+        font-size:0.875em;//14px
+        color:#ccc;
+        position:absolute;
+        bottom:2em;
+        width:80%;
+      }
+    }
+  }
+}
