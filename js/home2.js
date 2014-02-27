@@ -59,6 +59,8 @@
   }
 
   $(function(){
+    $('.main-logo').css({opacity:0});
+    $('.sub').show();
     TweenMax.to('.main-logo', 3, {
       opacity: 1,
       ease: Power1.easeInOut,

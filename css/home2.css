@@ -10,6 +10,8 @@ html {
       overflow: hidden; }
       html body .wrapper .main-logo {
         width: 488px; }
+      html body .wrapper .sub {
+        display: none; }
       html body .wrapper .main-logo, html body .wrapper .sub {
         position: absolute;
         z-index: 2; }
