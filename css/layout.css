@@ -30,7 +30,8 @@ body {
       body .top-menu ul li {
         float: left;
         line-height: 32px;
-        cursor: pointer; }
+        cursor: pointer;
+        position: relative; }
         body .top-menu ul li.item {
           margin-left: 64px; }
         body .top-menu ul li:hover a {
@@ -39,6 +40,21 @@ body {
           color: #24211d;
           font-size: 0.875em;
           text-decoration: none; }
+    body .top-menu .sub-menu {
+      position: absolute;
+      z-index: 99;
+      width: 200px;
+      color: #24211d;
+      display: none; }
+      body .top-menu .sub-menu .item {
+        margin-top: 2em; }
+        body .top-menu .sub-menu .item div {
+          font-size: 0.875em;
+          height: 1em; }
+        body .top-menu .sub-menu .item:hover {
+          font-weight: bold; }
+      body .top-menu .sub-menu .item-first {
+        margin-top: 0; }
 
 .main .right .h1, .main .right .h2, .main .right .h3 {
   display: block; }

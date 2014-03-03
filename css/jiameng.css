@@ -15,10 +15,12 @@ html body {
         margin-top: 10em; }
       html body .main .left .h1 {
         font-size: 2em;
-        color: #24211d; }
+        color: #24211d;
+        display: block; }
       html body .main .left .h2 {
         font-size: 1.375em;
-        color: #24211d; }
+        color: #24211d;
+        display: block; }
     html body .main .right {
       float: left;
       height: 100%; }

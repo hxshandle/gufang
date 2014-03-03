@@ -35,6 +35,7 @@ body{
         float:left;
         line-height:32px;
         cursor:pointer;
+        position:relative;
         &.item{
           margin-left:64px;
         }
@@ -50,6 +51,26 @@ body{
         }
       }
     }// End of ul
+    .sub-menu{
+      position:absolute;
+      z-index:99;
+      width:200px;
+      color:#24211d;
+      display:none;
+      .item{
+        margin-top:2em;
+        div{
+          font-size:0.875em;//14px;
+          height:1em;
+        }
+        &:hover{
+          font-weight:bold;
+        }
+      }
+      .item-first{
+        margin-top:0;
+      }
+    }// END .sub-menu
   }// End of menu
 }
 
