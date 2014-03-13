@@ -1,12 +1,12 @@
 function initImg(imgArr) {
   var $imgArr = $(imgArr)[0] ? $(imgArr) : $("[data-init=img]");
 
-  $imgArr.each(function() {
+  $imgArr.each(function () {
     var $img = $(this).find("img:last"),
-    width = $(this).width(),
-    height = $(this).height(),
-    imgWidth = $img.width(),
-    imgHeight = $img.height();
+        width = $(this).width(),
+        height = $(this).height(),
+        imgWidth = $img.width(),
+        imgHeight = $img.height();
 
     $(this).css({
       "overflow": "hidden"
@@ -49,10 +49,10 @@ function initImg(imgArr) {
 
 function changeImg(e) {
   var imgUrl = $(this).attr("data-url"),
-  newImg = new Image(),
-  $self = $(this),
-  $imgArr = $mainBg.find("img"),
-  curImg = $mainBg.find("img:last");
+      newImg = new Image(),
+      $self = $(this),
+      $imgArr = $mainBg.find("img"),
+      curImg = $mainBg.find("img:last");
   if (e) {
     e.stopPropagation();
   }
@@ -60,23 +60,23 @@ function changeImg(e) {
     return;
   }
 
-  newImg.onload = function(e) {
+  newImg.onload = function (e) {
     initImg($mainBg);
     $(".load").hide();
 
-    $imgArr.each(function() {
+    $imgArr.each(function () {
       if ($(this).attr("url") == imgUrl) {
         $(this).hide();
       }
     });
 
     $(newImg).stop().animate({
-      opacity: 1
-    },
-    1000,
-    function() {
-      $imgArr.remove();
-    });
+          opacity: 1
+        },
+        1000,
+        function () {
+          $imgArr.remove();
+        });
   }
 
   newImg.src = imgUrl;
@@ -84,20 +84,44 @@ function changeImg(e) {
   $(newImg).css("opacity", "0");
   $mainBg.append(newImg);
   curImg.stop().animate({
-    opacity: 0
-  },
-  1000,
-  function() {
-    curImg.remove();
-  });
+        opacity: 0
+      },
+      1000,
+      function () {
+        curImg.remove();
+      });
 
   curUrl = imgUrl;
 }
 
 var $mainBg = $(".main-bg"),
-curUrl = $(".wrapper").attr("data-url");
+    curUrl = $(".wrapper").attr("data-url");
 
 $("[data-url]").on("mouseover",
-function(e) {
-  changeImg.call(this, e);
+    function (e) {
+      changeImg.call(this, e);
+    });
+
+
+//anomiation
+var TextAnimation = function () {
+  var tl = new TimelineLite();
+  return {
+    register: function (sel) {
+      var ps = $(sel);
+      var tweens = $.map(ps, function (el) {
+        return TweenLite.fromTo(el, 1, {opacity: 0}, {opacity: 1});
+      });
+      $.each(tweens, function (idx, tween) {
+        tl.add(tween);
+      })
+    },
+    play:function(){
+      tl.play();
+    }
+  };
+}();
+
+$(function(){
+  TextAnimation.play();
 });
