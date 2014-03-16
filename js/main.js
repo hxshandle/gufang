@@ -110,6 +110,8 @@ var TextAnimation = function () {
     register: function (sel) {
       var ps = $(sel);
       var tweens = $.map(ps, function (el) {
+        var $el = $(el);
+
         return TweenLite.fromTo(el, 1, {opacity: 0}, {opacity: 1});
       });
       $.each(tweens, function (idx, tween) {

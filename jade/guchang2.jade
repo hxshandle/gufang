@@ -1,0 +1,28 @@
+doctype html
+- var pageClass="css/guchuang.css"
+- var title="gu chuang" 
+- var pageHeight = 700
+- var pageJS = "js/test.js"
+html
+  include _header
+  body
+    include _top_header
+    .row.main
+      .left
+        img(src='img/img-1.jpg')
+      .right
+        img(src='img/arrow-black.png' class='icon')
+        .cont
+          span.h1 COMPANY PROFILE
+          span.h2 公司简介
+          p  杭州古创服饰有限公司是一家以品牌起家的时尚男装企业。现旗下拥有海宁市绮正纺织有限公司和海宁市杰度服饰有限公司及新杰良品，X2HOMME，X3 COMMUNE(公社)，古方印象四大自主原创品牌。
+          p 公司经10多年的耕耘发展，始终重视原创研发投入和生产体系及营销体系的建设，形成了以品牌为核心的文化经营理念的现代企业经营体系，现已成为杭派男装领军企业。
+          p 公司于2011年迁址至浙江省海宁市，园区占地面积近10亩，员工300名左右。新杰良品和 X 2HOMME品牌的一级省代基本完成对国内主要城市布局； X3公社和古方印象电商品牌在天猫和淘宝正有条不紊地展开，发力于电子商务时代。
+          p 公司愿景致力打造中国时尚男装品牌。
+    include _foot
+    script.
+      $(function(){
+        TweenLite.fromTo('.main .cont',2,{left:'-500'},{left:0});
+      });
+
+
