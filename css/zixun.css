@@ -1,0 +1,52 @@
+html body {
+  background: #c1c0bf;
+  color: #24211d; }
+  html body .main {
+    margin-top: 110px; }
+    html body .main .zixun-cont {
+      margin: 0 auto;
+      width: 1000px; }
+      html body .main .zixun-cont .col-left {
+        float: left;
+        width: 14.375em; }
+        html body .main .zixun-cont .col-left a {
+          color: #24211d;
+          text-decoration: none; }
+          html body .main .zixun-cont .col-left a .h1 {
+            font-size: 2em;
+            display: block; }
+          html body .main .zixun-cont .col-left a .h2 {
+            font-size: 1.375em;
+            display: block; }
+      html body .main .zixun-cont .col-right {
+        float: right; }
+        html body .main .zixun-cont .col-right .title {
+          font-size: 2em;
+          color: #cc0000;
+          padding-bottom: 46px; }
+        html body .main .zixun-cont .col-right p {
+          font-size: 1.125em;
+          margin: 0.2em 0; }
+        html body .main .zixun-cont .col-right .img-gallery {
+          margin-top: 2em;
+          padding-bottom: 320px; }
+          html body .main .zixun-cont .col-right .img-gallery:after {
+            content: '';
+            clear: both; }
+          html body .main .zixun-cont .col-right .img-gallery .small-thumb {
+            float: left; }
+            html body .main .zixun-cont .col-right .img-gallery .small-thumb .img-row {
+              height: 110px; }
+              html body .main .zixun-cont .col-right .img-gallery .small-thumb .img-row img {
+                width: 180px;
+                height: 110px; }
+                html body .main .zixun-cont .col-right .img-gallery .small-thumb .img-row img:first-child {
+                  margin-right: 10px; }
+              html body .main .zixun-cont .col-right .img-gallery .small-thumb .img-row:first-child {
+                margin-bottom: 10px; }
+          html body .main .zixun-cont .col-right .img-gallery .large-thumb {
+            float: left;
+            margin-left: 10px; }
+            html body .main .zixun-cont .col-right .img-gallery .large-thumb img {
+              width: 360px;
+              height: 230px; }

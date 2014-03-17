@@ -1,0 +1,73 @@
+html {
+  body {
+    background: #c1c0bf;
+    color: #24211d;
+    .main {
+      margin-top:110px;
+      .zixun-cont {
+        margin: 0 auto;
+        width: 1000px;
+        .col-left {
+          float:left;
+          width: 14.375em;
+          a {
+            color: #24211d;
+            text-decoration:none;
+            .h1 {
+              font-size: 2em; // 32px;
+              display: block;
+            }
+            .h2 {
+              font-size: 1.375em; //22px;
+              display: block;
+            }
+          }// END a
+        }// END .col-left
+        .col-right{
+          float:right;
+          .title{
+            font-size:2em;
+            color:#cc0000;
+            padding-bottom:46px;
+          }
+          p{
+            font-size:1.125em;
+            margin:0.2em 0;
+          }
+          .img-gallery{
+            margin-top:2em;
+            padding-bottom:320px;
+            &:after{
+              content:'';
+              clear:both;
+            }
+            .small-thumb{
+              float:left;
+              .img-row{
+                height:110px;
+                img{
+                  width:180px;
+                  height:110px;
+                  &:first-child{
+                    margin-right:10px;
+                  }
+                }
+                &:first-child{
+                  margin-bottom:10px;
+                }
+              }// END .img-row
+            }// END .small-thumb
+            .large-thumb{
+              float:left;
+              margin-left:10px;
+              img{
+                width:360px;
+                height:230px;
+              }
+            }
+          }// END .img-gallery
+        }// END .col-right
+      }// END .cont
+    }// END main
+  }// END body
+}// END html
