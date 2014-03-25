@@ -23,15 +23,15 @@ body {
     margin: 0 auto;
     background: #fff;
     height: 32px;
-    padding-bottom: 1px; }
+    padding-bottom: 1px;
+    position: relative; }
     body .top-menu ul {
       width: 760px;
       margin: 0 auto; }
       body .top-menu ul li {
         float: left;
         line-height: 32px;
-        cursor: pointer;
-        position: relative; }
+        cursor: pointer; }
         body .top-menu ul li.item {
           margin-left: 64px; }
         body .top-menu ul li:hover a {
@@ -43,16 +43,26 @@ body {
     body .top-menu .sub-menu {
       position: absolute;
       z-index: 99;
-      width: 200px;
+      width: 100%;
       color: #24211d;
-      display: none; }
-      body .top-menu .sub-menu .item {
-        margin-top: 2em; }
-        body .top-menu .sub-menu .item div {
-          font-size: 0.875em;
-          height: 1em; }
-        body .top-menu .sub-menu .item:hover {
-          font-weight: bold; }
+      display: none;
+      background: rgba(0, 0, 0, 0.7);
+      filter: alpha(opacity=70);
+      left: 0; }
+      body .top-menu .sub-menu .inner {
+        width: 760px;
+        margin: 0 auto; }
+        body .top-menu .sub-menu .inner .item-first {
+          margin-left: 0px; }
+        body .top-menu .sub-menu .inner .item {
+          padding: 1em 0; }
+          body .top-menu .sub-menu .inner .item a {
+            font-size: 0.75em;
+            color: #fff;
+            line-height: 1.4em;
+            text-decoration: none; }
+            body .top-menu .sub-menu .inner .item a:hover {
+              text-decoration: underline; }
       body .top-menu .sub-menu .item-first {
         margin-top: 0; }
 
