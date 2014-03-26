@@ -1,0 +1,39 @@
+html{
+  body{
+    .main{
+      .left{
+        width:60%;
+        float:left;
+        overflow:hidden;
+        position:relative;
+        .logo{
+          position:absolute;
+        }
+      }// END .left
+      .right{
+        width:40%;
+        float:left;
+        background:#3a3734;
+        position:relative;
+        .icon{
+          position:absolute;
+          left:-10px;
+          top:50%;
+        }
+        .cont{
+          width:356px;
+          margin:0 auto;
+          .h1{
+            font-size:22px;
+          }
+          .h2{
+            font-size:16px;
+          }
+          p{
+            font-size:14px;
+          }
+        }
+      }// END .right
+    }// END .main
+  }// END body
+}// END html

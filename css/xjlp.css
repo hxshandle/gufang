@@ -1,0 +1,25 @@
+html body .main .left {
+  width: 60%;
+  float: left;
+  overflow: hidden;
+  position: relative; }
+  html body .main .left .logo {
+    position: absolute; }
+html body .main .right {
+  width: 40%;
+  float: left;
+  background: #3a3734;
+  position: relative; }
+  html body .main .right .icon {
+    position: absolute;
+    left: -10px;
+    top: 50%; }
+  html body .main .right .cont {
+    width: 356px;
+    margin: 0 auto; }
+    html body .main .right .cont .h1 {
+      font-size: 22px; }
+    html body .main .right .cont .h2 {
+      font-size: 16px; }
+    html body .main .right .cont p {
+      font-size: 14px; }

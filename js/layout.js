@@ -2,7 +2,7 @@ var VH = $(window).height(),
 offset = 159;
 function initLayout(minHeight) {
 	var vh = VH < minHeight ? minHeight: VH;
-	var _h = vh - 159;
+	var _h = vh - offset;
 	$('.main').css({
 		height: _h + 'px'
 	});

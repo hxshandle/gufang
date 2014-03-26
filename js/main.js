@@ -126,4 +126,5 @@ var TextAnimation = function () {
 
 $(function(){
   TextAnimation.play();
+  $(".img-liquid-fill").imgLiquid();
 });
