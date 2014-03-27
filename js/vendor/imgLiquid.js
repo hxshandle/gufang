@@ -167,7 +167,7 @@ imgLiquid.injectCss = '.imgLiquid img {visibility:hidden}';
 						'height':	'100%'
 					});
 
-					$('img', $imgBoxCont).css({'display': 'none'});
+					$('img:first', $imgBoxCont).css({'display': 'none'});
 
 					if (settings.onItemFinish) settings.onItemFinish($i, $imgBoxCont, $img); /* << CallBack */
 

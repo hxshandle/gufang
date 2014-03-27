@@ -1,0 +1,16 @@
+doctype html
+- var pageClass="css/store.css"
+- var pageJS = "js/store.js"
+- var title="店铺形象" 
+- var pageHeight = 900
+- var imgs = ['img/img-9.jpg','img/img-10.jpg','img/img-8.jpg']
+html
+  include _header
+  body
+    include _top_header
+    .row(style="padding-bottom:32px;background:#fff")
+      -for (var i = 0; i< 12; i++)
+        .polt.img-liquid-fill
+          img(src="#{imgs[i%3]}")
+    include _foot
+

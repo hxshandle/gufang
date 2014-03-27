@@ -66,14 +66,16 @@ body {
       body .top-menu .sub-menu .item-first {
         margin-top: 0; }
 
-.main .right .h1, .main .right .h2, .main .right .h3 {
-  display: block; }
-.main .right .h1 {
-  font-size: 2em; }
-.main .right .h2 {
-  font-size: 1.375em; }
-.main .right .h3 {
-  font-size: 1em; }
+.main {
+  padding-bottom: 32px; }
+  .main .right .h1, .main .right .h2, .main .right .h3 {
+    display: block; }
+  .main .right .h1 {
+    font-size: 2em; }
+  .main .right .h2 {
+    font-size: 1.375em; }
+  .main .right .h3 {
+    font-size: 1em; }
 
 .clear-both {
   clear: both; }

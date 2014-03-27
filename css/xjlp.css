@@ -4,7 +4,8 @@ html body .main .left {
   overflow: hidden;
   position: relative; }
   html body .main .left .logo {
-    position: absolute; }
+    position: absolute;
+    opacity: 0; }
 html body .main .right {
   width: 40%;
   float: left;
