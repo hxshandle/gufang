@@ -1,0 +1,24 @@
+doctype html
+- var pageClass="css/prodsgallery.css"
+- var pageJS = "js/prodsgallery.js"
+- var title="产品画册" 
+- var pageHeight = 900
+html
+  include _header
+  body
+    include _top_header
+    .gallery-wrapper.row
+      - for (var i = 0; i < 10; i++)
+        if i == 4
+          .polt
+            a(href="#")
+              .h1 PRODUCT PICTURE ALBUM
+              .h2 产品画册
+              img(src="img/left-bottom-white-arrow.png" class="arrow")
+        else
+          .polt
+            a(href="#")
+              img(src="img/huace-#{i%5+1}.png")
+              .title 2001秋冬
+    include _foot
+
