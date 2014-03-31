@@ -11,8 +11,9 @@ $(function() {
 			opacity: 0
 		},
 		{
-			opacity: 1
+			opacity: 0.99
 		});
 	});
+  $('.logo').attr('src',$('.logo').attr('src'));
 });
 

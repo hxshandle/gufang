@@ -1,0 +1,37 @@
+doctype html
+- var pageClass="css/contactus.css"
+- var pageJS = "js/contactus.js"
+- var title="联系我们" 
+- var pageHeight = 900
+  include _header
+  body
+    include _top_header
+    .main.row
+      .top-img
+      .contact-cont
+        .left
+          span.h1 CONTACT US
+          span.h2 联系我们
+          img(src='img/right-black-arrow.png', alt='')
+        .mid
+          img.bracket(src='img/bracket-right.png', alt='')
+          .mid-cont
+            img.logo(src='img/guchuang-black-logo.png', alt='')
+            .h1 杭州古创服饰有限公司
+            .h2 HANGZHOU GUCHUANG APPAREL CO., LTD.
+            .txt-row.mt22
+              .t1 海宁市绮正纺织有限公司
+              .t2 HAINING JIEDU TEXTILE CO., LTD.
+            .txt-row.mt18
+              .t1 海宁市杰度服饰有限公司
+              .t2 HAINING JIEDU APPAREL CO., LTD.
+        .right
+          ul
+            li 地址：浙江海宁市许巷轻纺村工业园区红合路1号
+            li 邮政编码：314409
+            li 人力资源部：0573-8799 8017
+            li 生产部：0573-8799 8065
+            li 代理商销售部：0573-8799 8063
+            li 电商部：0573-8799 3820
+    include _foot
+

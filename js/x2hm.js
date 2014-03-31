@@ -14,5 +14,6 @@ $(function() {
 			opacity: 1
 		});
 	});
+  $('.logo').attr('src',$('.logo').attr('src'));
 });
 
