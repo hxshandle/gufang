@@ -1,0 +1,48 @@
+html{
+  body{
+    background:#4e4b49;
+    .gallery-wrapper{
+      padding-bottom:47px;
+      .left,.right{
+        float:left;
+      }
+      .right{
+        width:310px;
+        .polt-big{
+          width:310px;
+          margin-top:15px;
+          position:fixed;
+          a{
+            color:#fff;
+            text-decoration:none;
+          }
+        }
+      }
+      .polt{
+        float:left;
+        display:inline-block;
+        width:256px;
+        height:357px;
+        margin-top:15px;
+        a{
+          text-decoration:none;
+          color:#fff;
+          .h1{
+            font-size:32px;
+          }
+          .h2{
+            font-size:22px;
+          }
+          .arrow{
+            margin-top:25px;
+          }
+          .title{
+            text-align:right;
+            padding-right:15px;
+          }
+        }// END a
+      }// END .polt
+      
+    }
+  }// END body
+}// END html

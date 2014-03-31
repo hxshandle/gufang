@@ -1,0 +1,12 @@
+html body {
+  background: #24211d; }
+  html body .main {
+    position: relative;
+    padding-left: 200px;
+    padding-top: 40px; }
+    html body .main .logo {
+      width: 296px;
+      margin-bottom: 183px; }
+    html body .main .large {
+      font-size: 92px;
+      color: #fff; }

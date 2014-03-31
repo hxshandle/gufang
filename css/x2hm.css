@@ -9,7 +9,7 @@ html body .main .left {
 html body .main .right {
   width: 40%;
   float: left;
-  background: #3a3734;
+  background: #004c46;
   position: relative; }
   html body .main .right .icon {
     position: absolute;
@@ -24,3 +24,8 @@ html body .main .right {
       font-size: 16px; }
     html body .main .right .cont p, html body .main .right .cont li {
       font-size: 14px; }
+    html body .main .right .cont a {
+      color: #fff;
+      text-decoration: none; }
+      html body .main .right .cont a:hover {
+        text-decoration: underline; }

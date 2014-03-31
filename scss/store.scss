@@ -1,5 +1,21 @@
 html{
   body{
+    .txt{
+      background:#000;
+      overflow:hidden;
+      .h1{
+        font-size:32px;
+        padding-top:120px;
+        padding-left:70px;
+      }
+      .h2{
+        font-size:22px;
+        padding-left:70px;
+      }
+      img{
+        padding-left:70px;
+      }
+    }
     .polt{
       width:400px;
       height:372px;

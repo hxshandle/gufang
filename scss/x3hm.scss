@@ -14,7 +14,7 @@ html{
       .right{
         width:40%;
         float:left;
-        background:#3a3734;
+        background:#24211d;
         position:relative;
         .icon{
           position:absolute;
@@ -32,6 +32,13 @@ html{
           }
           p,li{
             font-size:14px;
+          }
+          a{
+            color:#fff;
+            text-decoration:none;
+            &:hover{
+              text-decoration:underline;
+            }
           }
         }
       }// END .right

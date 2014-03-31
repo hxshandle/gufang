@@ -3,14 +3,14 @@ doctype html
 - var pageJS = "js/store.js"
 - var title="店铺形象" 
 - var pageHeight = 900
-- var imgs = ['img/img-9.jpg','img/img-10.jpg','img/img-8.jpg']
+- var imgs = ['img/img-21.jpg','img/img-22.jpg','img/img-23.jpg']
 html
   include _header
   body
     include _top_header
     .row(style="padding-bottom:32px;background:#fff")
       -for (var i = 0; i< 12; i++)
-        if i == 4
+        if i==5
           .polt.txt
             .h1 STORE IMAGE
             .h2 店铺形象
@@ -18,6 +18,5 @@ html
         else
           .polt.img-liquid-fill
             img(src="#{imgs[i%3]}")
-
     include _foot
 

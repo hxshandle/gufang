@@ -1,0 +1,31 @@
+doctype html
+- var pageClass="css/prodsgallery2.css"
+- var pageJS = "js/prodsgallery2.js"
+- var title="产品画册" 
+- var pageHeight = 900
+html
+  include _header
+  body
+    include _top_header
+    .gallery-wrapper.row
+      .left
+        - for (var i = 0; i < 10; i++)
+          if i == 4
+            .polt
+              a(href="#")
+                .h1 PRODUCT PICTURE ALBUM
+                .h2 产品画册
+                img(src="img/right-top-white-arrow.png" class="arrow")
+          else
+            .polt
+              a(href="#")
+                img(src="img/huace2-#{i%5+1}.png")
+                .title 2001秋冬
+      .right
+        .polt-big
+          a(href="#")
+            img(src="img/huace2-0.png")
+            .title 2001秋冬
+
+    include _foot
+
