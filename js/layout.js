@@ -24,7 +24,7 @@ $(function() {
 	},
 	function() {
 		var $this = $(this);
-		$this.find('.sub-menu').slideUp();
+		$this.find('.sub-menu').slideUp(100);
 	});
 
 });
