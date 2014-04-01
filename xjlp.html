@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/xjlp.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <title>test jade page</title>
+    <title>品牌介绍</title>
   </head>
   <body>
     <div class="row top-header"><img src="img/index-guchuang-light-min.png"></div>
@@ -47,7 +47,7 @@
                 <li class="item"><a href="store2.html">
                     <div>STORE IMAGE</div>
                     <div>店面形象</div></a></li>
-                <li class="item"><a href="#">
+                <li class="item"><a href="prodsgallery2.html">
                     <div>SPRODUCT PICTURE ALBUM</div>
                     <div>产品画册</div></a></li>
               </ul>
@@ -113,5 +113,11 @@
     <script src="js/main.js"></script>
     <script src="js/xjlp.js"></script>
     <script>initLayout(900);</script>
+    <script>
+      $(function(){
+        TweenLite.fromTo('.main .cont',2,{left:'1000'},{left:0});
+      });
+      
+    </script>
   </body>
 </html>

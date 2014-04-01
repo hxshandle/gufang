@@ -1,0 +1,16 @@
+html body .main .container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+  html body .main .container .logo {
+    position: absolute;
+    top: 125px;
+    left: 0px; }
+  html body .main .container .title {
+    position: absolute;
+    top: 140px;
+    left: 900px; }
+  html body .main .container .txt {
+    position: absolute;
+    top: 120px;
+    left: 370px; }

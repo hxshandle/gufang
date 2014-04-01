@@ -24,8 +24,9 @@ html
             li 销售群体：18-30岁网络青年
             li 天猫旗舰店：<a href="http://gufangyinxiang.tmall.com">http://gufangyinxiang.tmall.com</a>
 
-
-
-
     include _foot
+    script.
+      $(function(){
+        TweenLite.fromTo('.main .cont',2,{left:'1000'},{left:0});
+      });
 

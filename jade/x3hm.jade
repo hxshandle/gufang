@@ -25,8 +25,9 @@ html
             li 天猫旗舰店：<a href="http://x3commune.tmall.com">http://x3commune.tmall.com</a>
             li X3公社原创设计师店：<a href="http://sunjet-x2.tmall.com">http://sunjet-x2.tmall.com</a>
 
-
-
-
     include _foot
+    script.
+      $(function(){
+        TweenLite.fromTo('.main .cont',2,{left:'1000'},{left:0});
+      });
 

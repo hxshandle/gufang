@@ -22,8 +22,9 @@ html
             li 销售渠道：省级代理、直营、加盟
             li 销售群体：18-25岁的都市潮男
 
-
-
-
     include _foot
+    script.
+      $(function(){
+        TweenLite.fromTo('.main .cont',2,{left:'1000'},{left:0});
+      });
 

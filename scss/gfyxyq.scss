@@ -1,0 +1,26 @@
+html{
+  body{
+    .main{
+      .container{
+        width:1000px;
+        margin:0 auto;
+        position:relative;
+        .logo{
+          position:absolute;
+          top:125px;
+          left:0px;
+        }
+        .title{
+          position:absolute;
+          top:140px;
+          left:900px;
+        }
+        .txt{
+          position:absolute;
+          top:120px;
+          left:370px;
+        }
+      }// END .container
+    }// END .amin
+  }// END body
+}// END html
