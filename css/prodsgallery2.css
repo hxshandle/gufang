@@ -13,21 +13,21 @@ html body {
         html body .gallery-wrapper .right .polt-big a {
           color: #fff;
           text-decoration: none; }
-    html body .gallery-wrapper .polt {
+    html body .gallery-wrapper .polt, html body .gallery-wrapper .polt-blank {
       float: left;
       display: inline-block;
       width: 256px;
       height: 357px;
       margin-top: 15px; }
-      html body .gallery-wrapper .polt a {
+      html body .gallery-wrapper .polt a, html body .gallery-wrapper .polt-blank a {
         text-decoration: none;
         color: #fff; }
-        html body .gallery-wrapper .polt a .h1 {
+        html body .gallery-wrapper .polt a .h1, html body .gallery-wrapper .polt-blank a .h1 {
           font-size: 32px; }
-        html body .gallery-wrapper .polt a .h2 {
+        html body .gallery-wrapper .polt a .h2, html body .gallery-wrapper .polt-blank a .h2 {
           font-size: 22px; }
-        html body .gallery-wrapper .polt a .arrow {
+        html body .gallery-wrapper .polt a .arrow, html body .gallery-wrapper .polt-blank a .arrow {
           margin-top: 25px; }
-        html body .gallery-wrapper .polt a .title {
+        html body .gallery-wrapper .polt a .title, html body .gallery-wrapper .polt-blank a .title {
           text-align: right;
           padding-right: 15px; }

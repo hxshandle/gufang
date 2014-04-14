@@ -20,11 +20,11 @@ $(function() {
 	$(_sel).hover(
 	function() {
 		var $this = $(this);
-		$this.find('.sub-menu').slideDown();
+		$this.find('.sub-menu').stop().slideDown();
 	},
 	function() {
 		var $this = $(this);
-		$this.find('.sub-menu').slideUp(100);
+		$this.find('.sub-menu').stop().slideUp(100);
 	});
 
 });

@@ -22,6 +22,7 @@ $(function() {
 		});
 	}
 	doLayout();
+  $('.polt a').filter('.show-img').colorbox({rel:".polt a"});
   var tl = new TimelineLite();
   polts.each(function(){
     tl.add(TweenLite.to(this, 0.5, {opacity:1}));
