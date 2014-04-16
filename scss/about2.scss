@@ -24,6 +24,9 @@ html{
         }// END .col-left,.col-right
 
         .col-left{
+          div,img{
+            padding-left:200px;
+          }
           .history{
             padding-top:160px;
             ul{

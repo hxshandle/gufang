@@ -18,6 +18,8 @@ html body {
           font-size: 2em; }
         html body .main .about-cont .col-left .h2, html body .main .about-cont .col-right .h2 {
           font-size: 1.375em; }
+      html body .main .about-cont .col-left div, html body .main .about-cont .col-left img {
+        padding-left: 200px; }
       html body .main .about-cont .col-left .history {
         padding-top: 160px; }
         html body .main .about-cont .col-left .history ul {
